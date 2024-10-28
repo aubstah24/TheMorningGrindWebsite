@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Metrophobic&family=Playpen+Sans:wght@100..800&display=swap');
+
 /*
     GLOBAL STYLES
     ---------------------------------------*/
     body {
-        font-family: 'Metro Nova Hawaiian Regular', sans-serif;
+        font-family: 'Metrophobic', sans-serif;
     }
 
 
     h1 {
-        font-family: 'Elephant', sans-serif;
+        font-family: 'Chango', sans-serif;
     }
 
 
