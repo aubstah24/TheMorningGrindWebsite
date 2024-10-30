@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Button, Image, Menu } from "semantic-ui-react";
+import { Button, Icon, Image, Menu } from "semantic-ui-react";
 import bobaicon from '../images/boba-cart.png';
 import {Badge} from "@aws-amplify/ui-react";
 import {CartContext} from "../cart/CartContext";

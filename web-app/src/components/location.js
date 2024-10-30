@@ -1,7 +1,7 @@
 
 
 
-export const location = () => {
+export const Location = () => {
     return (
 
         <div>

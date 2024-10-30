@@ -1,6 +1,6 @@
 
 
-export const menu = () => {
+export const MenuPage = () => {
     return (
 
         <div>

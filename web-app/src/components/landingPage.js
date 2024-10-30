@@ -1,7 +1,7 @@
 import { Button } from "semantic-ui-react"
 
 
-export const landingPage = () => {
+export const LandingPage = () => {
 
     return (
         <div class="landing-wrapper">

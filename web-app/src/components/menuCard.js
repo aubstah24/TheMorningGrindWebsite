@@ -1,6 +1,6 @@
 
 
-export const menuCard = () => {
+export const MenuCard = () => {
 
     return (
 

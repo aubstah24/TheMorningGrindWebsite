@@ -1,6 +1,6 @@
 
 
-export const aboutUs = () => {
+export const AboutUs = () => {
 
     return (
         <div>

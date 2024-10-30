@@ -1,10 +1,10 @@
 
 
-export const OnlineOrderingpage = () => {
+export const OnlineOrderingPage = () => {
 
     return (
         <div>
-            
+
         </div>
     )
 }
