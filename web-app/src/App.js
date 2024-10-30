@@ -1,18 +1,19 @@
 import { Divider } from 'semantic-ui-react';
 import './App.css';
-import TopMenu from './components/topMenu';
+import TopMenu from './components/top-menu';
 import { Route, Routes } from 'react-router-dom';
 import { Footer } from './components/footer';
 import { MenuPage } from './components/menu';
-import { AboutUs } from './components/aboutUs';
+import { AboutUs } from './components/about-us';
 import { Location } from './components/location';
-import { AdminPage } from './admin/adminPage';
-import { CartPage } from './cart/cartPage';
-import { OnlineOrderingPage } from './ordering/onlineOrdering';
+import { AdminPage } from './admin/admin-page';
+import { CartPage } from './cart/cart-page';
+import { OnlineOrderingPage } from './ordering/online-ordering';
+import { ContextProvider } from './cart/cart-context';
 
 function App() {
   return (
-    <div>
+    <ContextProvider>
       <TopMenu/>
       <div className="container">
         <Routes>
@@ -27,7 +28,7 @@ function App() {
       </div>
         <Divider/>
       <Footer/>
-    </div>
+    </ContextProvider>
   );
 }
 

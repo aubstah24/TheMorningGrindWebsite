@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button, Icon, Image, Menu } from "semantic-ui-react";
 import bobaicon from '../images/boba-cart.png';
 import {Badge} from "@aws-amplify/ui-react";
-import {CartContext} from "../cart/CartContext";
+import { CartContext } from "../cart/cart-context";
 
 
 export default class TopMenu extends React.Component {
