@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Metrophobic&family=Playpen+Sans:wght@100..800&display=swap');
 
 /*
+    COLOR PALLETE
+
+    Header: 
+    -- Background color - Misty blue: #284958
+    -- Font color - Spearmint: #E0EAE9
+
+    Body:  
+    -- Background color - Brown: #E5C6B5
+    -- Body Font color - Misty Blue: #284958
+    -- Header Font color - Blue Grotto: #05263B
+
+    Footer:
+    -- Background color - Blue Grotto: #05263B
+    -- Font color - Spearmint: #E0EAE9
+    */
+
+
+
+
+
+/*
     GLOBAL STYLES
     ---------------------------------------*/
     body {
@@ -14,10 +35,72 @@
 
 
 
+
+
+
     /*
     LANDING PAGE
     ---------------------------------------*/
-
+    .navcontainer {
+        padding: 20px;
+        background-color: white;
+        justify-items: right;
+        justify-content: right;
+        box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav {
+        color: black;
+        display: flex;
+        gap: 2rem;
+        align-items: center; /* Added align-items to center items vertically */
+    }
+    
+    .site-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: black;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-family: 'Elephant', sans-serif;
+    }
+    
+    .nav a {
+        color: inherit;
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        padding: .25rem;
+    }
+    
+    .nav ul {
+        padding: 0;
+        margin: 5px;
+        list-style: none;
+        float: right;
+        display: inline-flex;
+        gap: 1rem;
+    }
+    
+    .nav li.active {
+        background-color: saddlebrown;
+    }
+    
+    .nav li:hover {
+        background-color: saddlebrown;
+    }
+    
+    .pageheader {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .profileicon {
+        float: right;
+    }
 
 
 
@@ -49,3 +132,20 @@
     /*
     CART
     ---------------------------------------*/
+
+
+
+
+
+
+
+    /*
+    FOOTER
+    ---------------------------------------*/
+    .footer-menu {
+        text-align: center;
+    }
+    
+    .footer-menu ul {
+        list-style: none;
+    }
