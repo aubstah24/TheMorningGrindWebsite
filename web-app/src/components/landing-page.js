@@ -20,7 +20,7 @@ export const LandingPage = () => {
                 </div>
 
                 <div>
-                    <img src="../images/boba_inside.jpg" alt="Boba Shop Preview" width="" height=""></img>
+                    <img src="../images/boba_inside.jpg" alt="Boba Shop Preview" width="" height=""></img> 
                 </div>
             </section>
             <section class="landing-highlights">

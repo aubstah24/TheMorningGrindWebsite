@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { Button, Icon, Image, Menu } from "semantic-ui-react";
 import bobaicon from '../images/boba-cart.png';
-import {Badge} from "@aws-amplify/ui-react";
 import { CartContext } from "../cart/cart-context";
 
 
@@ -19,7 +18,7 @@ export default class TopMenu extends React.Component {
 
 
       return (
-    <div className="navcontainer">
+    <div class="navcontainer">
         <h1><Link to="/" className="site-title">Da Morning Grind</Link></h1>
         <Menu borderless pointing secondary stackable className="nav">
             <Menu.Item
@@ -60,9 +59,8 @@ export default class TopMenu extends React.Component {
             <Menu.Item fitted>
                 <Button circular>
                     <Link to="/cart"><Image style={{width:"2.5rem", height:"auto"}} src={bobaicon}/>
-                    <Badge style={{justifyContent: "right", display: "flex"}}>
-                        <GetCartTotal/>
-                    </Badge>
+                    <span class="mdl-badge" data-badge={GetCartTotal}>
+                    </span>
                     </Link>
                 </Button>
             </Menu.Item>

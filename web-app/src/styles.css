@@ -24,7 +24,7 @@
 /*
     GLOBAL STYLES
     ---------------------------------------*/
-    body {
+    * {
         font-family: 'Metrophobic', sans-serif;
     }
 
@@ -33,22 +33,26 @@
         font-family: 'Chango', sans-serif;
     }
 
+    /* TOP MENU */
+    .navcontainer {
+        background-color: #284958;
+        padding: 20px;
+        justify-items: right;
+        justify-content: right;
+        box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
+    }
 
+    .navcontainer .nav a {
+        color: #E0EAE9;
 
+    }
 
 
 
     /*
     LANDING PAGE
     ---------------------------------------*/
-    .navcontainer {
-        padding: 20px;
-        background-color: white;
-        justify-items: right;
-        justify-content: right;
-        box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
-    }
-    
+
     .nav {
         color: black;
         display: flex;
@@ -143,9 +147,15 @@
     FOOTER
     ---------------------------------------*/
     .footer-menu {
+        background-color: #05263B;
         text-align: center;
+        margin: auto;
+        font-weight: 700;
+        color: #E0EAE9;
     }
     
     .footer-menu ul {
         list-style: none;
+        padding: 15px 0;
     }
+
