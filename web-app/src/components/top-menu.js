@@ -15,8 +15,6 @@ export default class TopMenu extends React.Component {
 
     const { activeItem } = this.state;
 
-
-
       return (
     <div class="navcontainer">
         <h1><Link to="/" className="site-title">Da Morning Grind</Link></h1>

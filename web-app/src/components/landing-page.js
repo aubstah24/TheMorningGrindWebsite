@@ -1,4 +1,6 @@
-import { Button } from "semantic-ui-react"
+import { Button } from "semantic-ui-react";
+import landingfiller1 from '../images/matcha_landing.png';
+import landingfiller2 from '../images/boba_inside.jpg';
 
 
 export const LandingPage = () => {
@@ -14,20 +16,20 @@ export const LandingPage = () => {
 
 
             <section class="landing-highlights">
-                <div>
+                <div class="landing-sections">
                     <h2>Travel with our roasts from around the world ... </h2>
                     <p>We brought the countries to you with our roasts from around the world.  We hand picked the best coffees and with different bodies so that you can find the right fit.  Our roasts include beans from Brazil, Puerto Rico, Japan, Ethiopia, and Seattle.</p>
                 </div>
 
-                <div>
-                    <img src="../images/boba_inside.jpg" alt="Boba Shop Preview" width="" height=""></img> 
+                <div class="landing-sections">
+                    <img src={landingfiller2} alt="Boba Shop Preview" width="600px"/> 
                 </div>
             </section>
             <section class="landing-highlights">
-                <div>
-                    <img src="../images/matcha_landing.png" alt="Matcha Powder" width="" height=""></img>
+                <div class="landing-sections">
+                    <img src={landingfiller1} alt="Matcha Powder" width="600px"/>
                 </div>
-                <div>
+                <div class="landing-sections">
                     <h2>Travel with our roasts from around the world ... </h2>
                     <p>We brought the countries to you with our roasts from around the world.  We hand picked the best coffees and with different bodies so that you can find the right fit.  Our roasts include beans from Brazil, Puerto Rico, Japan, Ethiopia, and Seattle.</p>
                 </div>

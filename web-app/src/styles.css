@@ -4,17 +4,17 @@
     COLOR PALLETE
 
     Header: 
-    -- Background color - Misty blue: #284958
-    -- Font color - Spearmint: #E0EAE9
+    -- Background color - Shingle Fawn: #795237
+    -- Font color - Vanilla: #E0EAE9
 
     Body:  
-    -- Background color - Brown: #E5C6B5
-    -- Body Font color - Misty Blue: #284958
-    -- Header Font color - Blue Grotto: #05263B
+    -- Background color - Brown: #956A45
+    -- Body Font color - Shingle Fawn: #795237
+    -- Header Font color - Treehouse: #33281C
 
     Footer:
-    -- Background color - Blue Grotto: #05263B
-    -- Font color - Spearmint: #E0EAE9
+    -- Background color - Treehouse: #33281C
+    -- Font color - Vanilla: #CDBD9E
     */
 
 
@@ -26,6 +26,7 @@
     ---------------------------------------*/
     * {
         font-family: 'Metrophobic', sans-serif;
+        font: #795237;
     }
 
 
@@ -35,7 +36,7 @@
 
     /* TOP MENU */
     .navcontainer {
-        background-color: #284958;
+        background-color: #795237;
         padding: 20px;
         justify-items: right;
         justify-content: right;
@@ -43,15 +44,14 @@
     }
 
     .navcontainer .nav a {
-        color: #E0EAE9;
+        color: #CDBD9E;
 
     }
 
+    .site-title:hover {
+        color: #956A45;
+    }
 
-
-    /*
-    LANDING PAGE
-    ---------------------------------------*/
 
     .nav {
         color: black;
@@ -96,17 +96,27 @@
     .nav li:hover {
         background-color: saddlebrown;
     }
-    
-    .pageheader {
-        padding: 20px;
+
+    /*
+    LANDING PAGE
+    ---------------------------------------*/
+
+    .landing-heading {
         text-align: center;
-    }
-    
-    .profileicon {
-        float: right;
+        padding: 5rem 0;
     }
 
+    .landing-highlights {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        margin: auto;
+    }
 
+    .landing-sections {
+        width: 700px;
+    }
 
 
     /*
@@ -147,11 +157,11 @@
     FOOTER
     ---------------------------------------*/
     .footer-menu {
-        background-color: #05263B;
+        background-color: #33281C;
         text-align: center;
         margin: auto;
         font-weight: 700;
-        color: #E0EAE9;
+        color: #CDBD9E;
     }
     
     .footer-menu ul {
