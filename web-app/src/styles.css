@@ -6,6 +6,7 @@
     Header: 
     -- Background color - Shingle Fawn: #795237
     -- Font color - Vanilla: #E0EAE9
+    -- Header color - Treehouse: #33281C
 
     Body:  
     -- Background color - Brown: #956A45
@@ -26,7 +27,7 @@
     ---------------------------------------*/
     * {
         font-family: 'Metrophobic', sans-serif;
-        font: #795237;
+
     }
 
 
@@ -38,8 +39,6 @@
     .navcontainer {
         background-color: #795237;
         padding: 20px;
-        justify-items: right;
-        justify-content: right;
         box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
     }
 
@@ -63,17 +62,17 @@
     .site-title {
         font-size: 3rem;
         font-weight: bold;
-        color: black;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         padding: 10px;
         font-family: 'Elephant', sans-serif;
+        color: #33281C;
     }
-    
+
+    .nav-header {
+        text-align: center;
+        margin: auto;
+    }
+
     .nav a {
-        color: inherit;
         text-decoration: none;
         height: 100%;
         display: flex;
@@ -101,6 +100,13 @@
     LANDING PAGE
     ---------------------------------------*/
 
+
+    .landing-wrapper {
+        max-width: 70%;
+        margin: auto;
+    }
+
+
     .landing-heading {
         text-align: center;
         padding: 5rem 0;
@@ -122,6 +128,11 @@
     /*
     MENU
     ---------------------------------------*/
+    .menu-section {
+        margin: auto;
+        text-align: center;
+        padding: 40px 0;
+    }
 
 
 
@@ -161,11 +172,11 @@
         text-align: center;
         margin: auto;
         font-weight: 700;
-        color: #CDBD9E;
     }
     
     .footer-menu ul {
         list-style: none;
+        color: #CDBD9E;
         padding: 15px 0;
     }
 

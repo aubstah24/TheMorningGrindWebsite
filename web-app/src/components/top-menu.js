@@ -17,7 +17,10 @@ export default class TopMenu extends React.Component {
 
       return (
     <div class="navcontainer">
-        <h1><Link to="/" className="site-title">Da Morning Grind</Link></h1>
+        <div className='nav-header'>
+            <h1><Link to="/" className="site-title">The Morning Grind</Link></h1>
+        </div>
+
         <Menu borderless pointing secondary stackable className="nav">
             <Menu.Item
                 name='home'
