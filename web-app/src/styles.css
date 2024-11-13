@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chango&family=Metrophobic&family=Playpen+Sans:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Metrophobic&family=Playpen+Sans:wght@100..800&display=swap");
 
 /*
     COLOR PALLETE
@@ -18,165 +18,163 @@
     -- Font color - Vanilla: #CDBD9E
     */
 
-
-
-
-
 /*
     GLOBAL STYLES
     ---------------------------------------*/
-    * {
-        font-family: 'Metrophobic', sans-serif;
+* {
+  font-family: "Metrophobic", sans-serif;
+}
 
-    }
+h1 {
+  font-family: "Chango", sans-serif;
+}
 
+.app-wrapper {
+  width: 100%;
+}
 
-    h1 {
-        font-family: 'Chango', sans-serif;
-    }
+/* TOP MENU */
+.navcontainer {
+  background-color: #795237;
+  padding: 20px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
+}
 
-    /* TOP MENU */
-    .navcontainer {
-        background-color: #795237;
-        padding: 20px;
-        box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
-    }
+.navcontainer .nav a {
+  color: #cdbd9e;
+}
 
-    .navcontainer .nav a {
-        color: #CDBD9E;
+.site-title:hover {
+  color: #956a45;
+}
 
-    }
+.nav {
+  color: black;
+  display: flex;
+  gap: 2rem;
+  align-items: center; /* Added align-items to center items vertically */
+  padding-top: 2rem;
+}
 
-    .site-title:hover {
-        color: #956A45;
-    }
+.site-title {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Elephant", sans-serif;
+  color: #33281c;
+}
 
+.nav-header {
+  text-align: center;
+  margin: auto;
+}
 
-    .nav {
-        color: black;
-        display: flex;
-        gap: 2rem;
-        align-items: center; /* Added align-items to center items vertically */
-    }
-    
-    .site-title {
-        font-size: 3rem;
-        font-weight: bold;
-        padding: 10px;
-        font-family: 'Elephant', sans-serif;
-        color: #33281C;
-    }
+.nav a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  padding: 0.25rem;
+  margin: 5px;
+  list-style: none;
+  float: right;
+  display: inline-flex;
+}
 
-    .nav-header {
-        text-align: center;
-        margin: auto;
-    }
+.link:active {
+  background-color: #33281c;
+  padding: 1rem;
+}
 
-    .nav a {
-        text-decoration: none;
-        height: 100%;
-        display: flex;
-        padding: .25rem;
-    }
-    
-    .nav ul {
-        padding: 0;
-        margin: 5px;
-        list-style: none;
-        float: right;
-        display: inline-flex;
-        gap: 1rem;
-    }
-    
-    .nav li.active {
-        background-color: saddlebrown;
-    }
-    
-    .nav li:hover {
-        background-color: saddlebrown;
-    }
+.nav .link:hover {
+  background-color: saddlebrown;
+}
 
-    /*
+.nav .ui.circular.button.cart-btn {
+  margin-left: auto;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+  position: relative;
+  top: -3px;
+  left: 5px;
+}
+
+/*
     LANDING PAGE
     ---------------------------------------*/
 
+.landing-wrapper {
+  max-width: 70%;
+  margin: auto;
+}
 
-    .landing-wrapper {
-        max-width: 70%;
-        margin: auto;
-    }
+.landing-heading {
+  text-align: center;
+  padding: 5rem 0;
+}
 
+.landing-highlights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+}
 
-    .landing-heading {
-        text-align: center;
-        padding: 5rem 0;
-    }
+.landing-sections {
+  width: 700px;
+}
 
-    .landing-highlights {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-        margin: auto;
-    }
+.meme-board {
+  margin: auto;
+  text-align: center;
+  justify-items: center;
+}
 
-    .landing-sections {
-        width: 700px;
-    }
+.meme-board img {
+  border: 24px solid #33281c;
 
+  max-width: 400px;
+}
 
-    /*
+/*
     MENU
     ---------------------------------------*/
-    .menu-section {
-        margin: auto;
-        text-align: center;
-        padding: 40px 0;
-    }
+.menu-section {
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
 
-
-
-
-
-    /*
+/*
     ABOUT US
     ---------------------------------------*/
 
-
-
-
-
-    /*
+/*
     ADMIN
     ---------------------------------------*/
 
-
-
-
-
-    /*
+/*
     CART
     ---------------------------------------*/
 
-
-
-
-
-
-
-    /*
+/*
     FOOTER
     ---------------------------------------*/
-    .footer-menu {
-        background-color: #33281C;
-        text-align: center;
-        margin: auto;
-        font-weight: 700;
-    }
-    
-    .footer-menu ul {
-        list-style: none;
-        color: #CDBD9E;
-        padding: 15px 0;
-    }
+.footer-menu {
+  background-color: #33281c;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
+}
 
+.footer-menu ul {
+  list-style: none;
+  color: #cdbd9e;
+  padding: 15px 0;
+}

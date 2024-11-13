@@ -6,9 +6,9 @@ export const Footer = () => {
     return (
         <div class='footer-menu'>
             <ul>
-                <li>The Morning Grind @2024</li>
-                <li>Contact Us at themorningrind@gmail.com</li>
-                <li>Instagram: @theMG</li>
+                <li>Da Morning Grind @2024</li>
+                <li>damorningrind@gmail.com</li>
+                <li>1003 Pensacola Street, Honolulu, HI 96814</li>
             </ul>
         </div>
     )

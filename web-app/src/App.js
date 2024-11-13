@@ -1,6 +1,7 @@
 import { Divider } from 'semantic-ui-react';
 import './App.css';
-import TopMenu from './components/top-menu';
+import './styles.css';
+import {TopMenu} from './components/top-menu';
 import 'semantic-ui-css/semantic.min.css';
 import { Route, Routes } from 'react-router-dom';
 import { Footer } from './components/footer';
@@ -17,7 +18,7 @@ function App() {
   return (
      <ContextProvider>
         <TopMenu/>
-        <div class="container">
+        <div class="app-wrapper">
           <Routes>
             <Route path="/" element={<LandingPage/>}></Route>
             <Route path="/menu" element={<MenuPage/>}></Route>

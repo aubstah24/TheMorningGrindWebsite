@@ -1,78 +1,40 @@
 import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
-import { Button, Icon, Image, Menu } from "semantic-ui-react";
+import { Button, Image } from "semantic-ui-react";
 import bobaicon from '../images/boba-cart.png';
 import { CartContext } from "../cart/cart-context";
 
 
-export default class TopMenu extends React.Component {
+export const TopMenu = () => {
 
-    state = { activeItem: 'home' }
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name});
+    return (
+        <div class="navcontainer">
+            <div class="nav-header">
+                <h1><Link to="/" className="site-title">The Morning Grind</Link></h1>
+            </div>
 
-
-  render() {
-
-    const { activeItem } = this.state;
-
-      return (
-    <div class="navcontainer">
-        <div className='nav-header'>
-            <h1><Link to="/" className="site-title">The Morning Grind</Link></h1>
-        </div>
-
-        <Menu borderless pointing secondary stackable className="nav">
-            <Menu.Item
-                name='home'
-                active={activeItem === 'home'}
-                onClick={this.handleItemClick}>
-                <Link to="/">HOME</Link>
-                </Menu.Item>
-            <Menu.Item
-                name='menu'
-                active={activeItem === 'menu'}
-                onClick={this.handleItemClick}>
-                <Link to="/menu">MENU</Link>
-                </Menu.Item>
-            <Menu.Item
-                name='order'
-                active={activeItem === 'order'}
-                onClick={this.handleItemClick}>
-                <Link to="/order">ORDER ONLINE</Link>
-                </Menu.Item>
-            <Menu.Item
-                name='about'
-                active={activeItem === 'about'}
-                onClick={this.handleItemClick}>
-                <Link to="/about">ABOUT US</Link>
-                </Menu.Item>
-            <Menu.Item
-                name='location'
-                active={activeItem === 'location'}
-                onClick={this.handleItemClick}>
-                <Link to="/location">LOCATION</Link>
-                </Menu.Item>
-            <Menu.Item fitted position="right">
-                <Link to="/account">
-                    <Icon name="user circle" size="big"/>
-                </Link>
-            </Menu.Item>
-            <Menu.Item fitted>
-                <Button circular>
+            <div class="nav">
+                <a href="/" class="link">HOME</a>
+                <a href="/menu" class="link">MENU</a>
+                <a href="/order" class="link">ONLINE ORDER</a>
+                <a href="/about" class="link">ABOUT US</a>
+                <a href="/location" class="link">LOCATION</a>
+                <Button circular className='cart-btn'>
                     <Link to="/cart"><Image style={{width:"2.5rem", height:"auto"}} src={bobaicon}/>
-                    <span class="mdl-badge" data-badge={GetCartTotal}>
+                    <span class="mdl-badge">{GetCartTotal}
                     </span>
                     </Link>
                 </Button>
-            </Menu.Item>
+            </div>
 
-        </Menu>
         </div>
-    );
-  }
+    )
 }
+
 
 const GetCartTotal = () => {
     const {cartItems} = useContext(CartContext);
     return cartItems.length
 }
+
+
