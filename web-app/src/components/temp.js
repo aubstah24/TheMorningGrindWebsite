@@ -30,10 +30,49 @@ export const TopMenu1 = () => {
 }
 
 
-const GetCartTotal = () => {
-    const {cartItems} = useContext(CartContext);
-    return cartItems.length
-}
+
+++++++++++++++++++++++++++++++++++++
+
+<div className="navcontainer">
+            <div className="nav-header">
+                <h1><Link to="/" className="site-title">The Morning Grind</Link></h1>
+            </div>
+
+            <div className="nav">
+                <a 
+                    href="/" 
+                    className={`link ${activeItem === 'home' ? 'active' : ''}`}
+                    onClick={() => handleItemClick('home')}
+                >HOME</a>
+                <a 
+                    href="/menu"
+                    className={`link ${activeItem === 'menu' ? 'active' : ''}`}
+                    onClick={() => handleItemClick('menu')}
+                >MENU</a>
+                <a 
+                    href="/order"
+                    className={`link ${activeItem === 'order' ? 'active' : ''}`}
+                    onClick={() => handleItemClick('order')}
+                >ONLINE ORDER</a>
+                <a 
+                    href="/about" 
+                    className={`link ${activeItem === 'about' ? 'active' : ''}`}
+                    onClick={() => handleItemClick('about')}
+                >ABOUT US</a>
+                <a 
+                href="/location"
+                className={`link ${activeItem === 'location' ? 'active' : ''}`}
+                    onClick={() => handleItemClick('location')}
+                >LOCATION</a>
+                <Button circular className='cart-btn'>
+                    <Link to="/cart">
+                        <img style={{width:"2.5rem", height:"auto"}} src={bobaicon} alt='Boba Cart Icon'/>
+                        <span className='badge'>{cartItems.length}</span>
+                    </Link>
+                </Button>
+            </div>
+
+        </div>
 
 
 

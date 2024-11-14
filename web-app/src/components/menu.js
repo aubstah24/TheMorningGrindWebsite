@@ -4,15 +4,15 @@ import coffeeMenu from '../images/coffee-menu.png';
 export const MenuPage = () => {
     return (
 
-        <div class="menu-page">
+        <div className="menu-page">
 
-            <section class="menu-section">
+            <section className="menu-section">
                 <h2>Our Boba Menu</h2>
                 <img src={bobaMenu} alt="Menu for Boba Drinks"/>
             </section>
 
 
-            <section class="menu-section">
+            <section className="menu-section">
                 <h2>Our Kopa Menu</h2>
                 <img src={coffeeMenu} alt="Menu for Boba Drinks"/>
             </section>

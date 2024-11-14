@@ -18,7 +18,7 @@ function App() {
   return (
      <ContextProvider>
         <TopMenu/>
-        <div class="app-wrapper">
+        <div className="app-wrapper">
           <Routes>
             <Route path="/" element={<LandingPage/>}></Route>
             <Route path="/menu" element={<MenuPage/>}></Route>

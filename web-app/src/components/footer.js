@@ -4,7 +4,7 @@ import React from "react"
 export const Footer = () => {
 
     return (
-        <div class='footer-menu'>
+        <div className='footer-menu'>
             <ul>
                 <li>Da Morning Grind @2024</li>
                 <li>damorningrind@gmail.com</li>
