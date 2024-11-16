@@ -40,18 +40,6 @@ h1 {
   box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
-.ui.vertical.menu {
-  background-color: #795237;
-}
-
-.navcontainer.mobile {
-  padding: 20px;
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
 .navcontainer .nav a {
   color: #cdbd9e;
 }
@@ -66,19 +54,6 @@ h1 {
   gap: 2rem;
   align-items: center; /* Added align-items to center items vertically */
   padding-top: 2rem;
-}
-
-.nav-mobile {
-  color: black;
-  display: flex;
-  align-items: center; /* Added align-items to center items vertically */
-  justify-items: center;
-  padding: 0;
-}
-
-.ui.vertical.menu {
-  background-color: #795237;
-  display: flex;
 }
 
 .site-title {
@@ -124,6 +99,71 @@ h1 {
   color: black;
   border-radius: 50%;
   font-size: 12px;
+}
+
+/*********** MOBILE CSS SCREEN WIDTH  **************/
+
+.navcontainer-mobile {
+  background-color: #795237;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.menu-list {
+  list-style-type: none;
+}
+
+.mobile-modal {
+  text-align: center;
+  font-size: large;
+}
+
+.menu-list i {
+  padding-bottom: 4rem;
+}
+
+.mobile-modal .menu-list li {
+  padding: 10px;
+}
+
+.mobile-modal .menu-list li a {
+  color: #e0eae9;
+  text-decoration: none;
+}
+
+.menu-social {
+  list-style-type: none;
+}
+
+.menu-social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.snbox-mobile {
+  display: inline-flex;
+  list-style-type: none;
+  border-right: 2px solid #000;
+}
+
+.snbox-mobile a img {
+  width: 40px;
+}
+
+.menu-logo img {
+  width: 3rem;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 915px) {
+  .badge {
+    color: white;
+  }
 }
 
 /*

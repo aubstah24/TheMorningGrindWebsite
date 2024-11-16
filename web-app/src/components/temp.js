@@ -29,7 +29,56 @@ export const TopMenu1 = () => {
     )
 }
 
++++++++++++++++++++++++++++++++++++
 
+<div class="ui compact menu">
+          <div class="ui simple dropdown item">
+            MENU
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <div
+                class="item"
+                name="home"
+                active={activeItem === "home"}
+                onClick={() => handleItemClick("home")}
+              >
+                <Link to="/">HOME</Link>
+              </div>
+              <div
+                class="item"
+                name="menu"
+                active={activeItem === "menu"}
+                onClick={() => handleItemClick("menu")}
+              >
+                <Link to="/menu">MENU</Link>
+              </div>
+              <div
+                class="item"
+                name="order"
+                active={activeItem === "order"}
+                onClick={() => handleItemClick("order")}
+              >
+                <Link to="/order">ORDER ONLINE</Link>
+              </div>
+              <div
+                class="item"
+                name="about"
+                active={activeItem === "about"}
+                onClick={() => handleItemClick("about")}
+              >
+                <Link to="/about">ABOUT US</Link>
+              </div>
+              <div
+                class="item"
+                name="location"
+                active={activeItem === "location"}
+                onClick={() => handleItemClick("location")}
+              >
+                <Link to="/location">LOCATION</Link>
+              </div>
+            </div>
+          </div>
+        </div>
 
 ++++++++++++++++++++++++++++++++++++
 
