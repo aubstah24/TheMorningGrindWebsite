@@ -34,7 +34,7 @@ export const LandingPage = () => {
       </div>
 
       <section id="animation-right" class="landing-highlights slide-right">
-        <div class="landing-sections">
+        <div class="landing-sections first">
           <h2>A taste of Hawai'i every morning ... </h2>
           <p>
             Supporting local is our vision and goal. We provide a variety of
@@ -48,16 +48,18 @@ export const LandingPage = () => {
         </div>
       </section>
       <section id="animation-left" class="landing-highlights">
-        <div class="landing-sections">
+        <div class="landing-sections first">
           <img src={landingfiller1} alt="Matcha Powder" width="400px" />
         </div>
         <div class="landing-sections">
-          <h2>Travel with our roasts from around the world ... </h2>
+          <h2>Have a new suprise every month ...</h2>
           <p>
-            We brought the countries to you with our roasts from around the
-            world. We hand picked the best coffees and with different bodies so
-            that you can find the right fit. Our roasts include beans from
-            Brazil, Puerto Rico, Japan, Ethiopia, and Seattle.
+            We are on an island surrounded by bodies of water. We love our local
+            farms and supporting local will always be our main goal. In addition
+            to our wonderful coffee beans from the islands, we will have a
+            special every month that brings other countries to you. Each month
+            will have a brew from another country blend that you can't get here
+            on grocery shelves.
           </p>
         </div>
       </section>

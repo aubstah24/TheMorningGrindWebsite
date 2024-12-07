@@ -187,6 +187,7 @@ h1 {
   padding: 20px;
   margin: auto;
   background-color: #e0eae9;
+  align-items: center;
 }
 
 .landing-sections {
@@ -194,16 +195,37 @@ h1 {
   color: #33281c;
 }
 
+.landing-sections.first {
+  text-align: end;
+  padding-right: 2rem;
+}
+
+.landing-sections img {
+  border: 3px solid black;
+  border-radius: 10%;
+}
+
 .meme-board {
   margin: auto;
   text-align: center;
   justify-items: center;
+  padding-bottom: 2rem;
 }
 
 .meme-board img {
   border: 24px solid #33281c;
 
   max-width: 400px;
+}
+
+@media screen and (max-width: 1266px) {
+  .landing-highlights {
+    display: grid;
+  }
+
+  .landing-sections {
+    padding-bottom: 2rem;
+  }
 }
 
 #animation-right.animate {
@@ -247,10 +269,37 @@ h1 {
 /*
     MENU
     ---------------------------------------*/
+
+.menu-page {
+  background-image: url("./images/bg-menu-page.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+}
+
 .menu-section {
   margin: auto;
   text-align: center;
   padding: 40px 0;
+}
+
+.menu-page .menu-section img {
+  max-width: 700px;
+}
+
+@media screen and (max-width: 443px) {
+  .menu-page .menu-section img {
+    max-width: 310px;
+    margin: auto;
+  }
+
+  .menu-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #795237;
+  }
 }
 
 /*
