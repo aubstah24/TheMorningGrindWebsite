@@ -302,6 +302,20 @@ h1 {
   margin: auto;
 }
 
+@media screen and (max-width: 980px) {
+  .bio img {
+    width: 80%;
+    min-width: 300px;
+  }
+
+  iframe {
+    max-width: fit-content;
+  }
+
+  .bio p {
+    width: 70%;
+  }
+}
 /*
     ADMIN
     ---------------------------------------*/
