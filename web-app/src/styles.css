@@ -318,6 +318,29 @@ h1 {
 }
 
 /*
+    LOCATION
+    ---------------------------------------*/
+.location-wrapper {
+  text-align: center;
+  width: 80%;
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.location-wrapper img {
+  max-width: 700px;
+}
+
+.location-wrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.location-wrapper p {
+  padding: 1rem 0;
+}
+
+/*
     ADMIN
     ---------------------------------------*/
 
