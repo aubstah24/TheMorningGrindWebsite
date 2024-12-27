@@ -98,7 +98,7 @@ export const TopMenu = () => {
         <div className="nav-header">
           <h1>
             <Link to="/" className="site-title">
-              The Morning Grind
+              Da Morning Grind
             </Link>
           </h1>
         </div>
