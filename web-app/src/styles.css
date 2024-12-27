@@ -275,6 +275,33 @@ h1 {
     ABOUT US
     ---------------------------------------*/
 
+.about-us-wrapper {
+  text-align: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.bio img {
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #33281c;
+}
+
+.bio p {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.questionaire {
+  width: 70%;
+  background-color: beige;
+  padding-top: 1rem;
+  margin: auto;
+}
+
 /*
     ADMIN
     ---------------------------------------*/
