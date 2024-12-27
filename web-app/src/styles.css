@@ -245,6 +245,7 @@ h1 {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .menu-section {
@@ -257,16 +258,16 @@ h1 {
   max-width: 700px;
 }
 
-@media screen and (max-width: 443px) {
-  .menu-page .menu-section img {
+@media screen and (max-width: 980px) {
+  .menu-section img {
     max-width: 310px;
     margin: auto;
   }
 
   .menu-page {
-    display: flex;
-    flex-direction: column;
-    background-color: #795237;
+    display: block;
+    background: #cdbd9e;
+    padding-top: 3rem;
   }
 }
 
