@@ -343,10 +343,36 @@ h1 {
 /*
     ADMIN
     ---------------------------------------*/
+.admin-wrapper {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.admin-header {
+  text-align: center;
+}
+
+.admin-sections {
+  padding: 1.5rem 0;
+}
+
+.table-contents {
+  padding-top: 2rem;
+}
+.table-contents ul {
+  list-style: none;
+  padding: 0;
+}
 
 /*
     CART
     ---------------------------------------*/
+
+.empty-cart h1 {
+  text-align: center;
+  padding-top: 20px;
+}
 
 /*
     FOOTER
