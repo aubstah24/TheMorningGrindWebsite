@@ -1,17 +1,17 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button, Menu, Modal } from "semantic-ui-react";
-import bobaicon from "../images/boba-cart.png";
+import { Menu, Modal } from "semantic-ui-react";
+// import bobaicon from "../images/boba-cart.png";
 import logo from "../images/logo-coffee-cup.png";
 import ig from "../images/mainbar-menu_ig.svg";
 import fb from "../images/mainbar-menu_fb.svg";
-import { CartContext } from "../cart/cart-context";
+// import { CartContext } from "../cart/cart-context";
 import { useMediaQuery } from "react-responsive";
 
 export const TopMenu = () => {
   const [activeItem, setActiveItem] = useState("home");
   const [toggleMenu, setToggleMenu] = useState(false);
-  const { cartItems } = useContext(CartContext);
+  // const { cartItems } = useContext(CartContext);
   const isMobile = useMediaQuery({ maxWidth: 915 });
 
   const handleItemClick = (link) => {
