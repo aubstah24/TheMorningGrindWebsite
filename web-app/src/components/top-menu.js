@@ -77,7 +77,7 @@ export const TopMenu = () => {
             </ul>
           </li>
 
-          <li>
+          {/* <li>
             <div>
               <Link to="/cart">
                 <img
@@ -88,7 +88,7 @@ export const TopMenu = () => {
                 <span className="badge">{cartItems.length}</span>
               </Link>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
     );
@@ -146,7 +146,7 @@ export const TopMenu = () => {
             <Link to="/location">LOCATION</Link>
           </Menu.Item>
 
-          <Button circular className="cart-btn">
+          {/* <Button circular className="cart-btn">
             <Link to="/cart">
               <img
                 style={{ width: "2.5rem", height: "auto" }}
@@ -155,7 +155,7 @@ export const TopMenu = () => {
               />
               <span className="badge">{cartItems.length}</span>
             </Link>
-          </Button>
+          </Button> */}
         </Menu>
       </div>
     );
