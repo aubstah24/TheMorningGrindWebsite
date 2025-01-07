@@ -2,7 +2,7 @@
   "name": "web-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aubstah24.github.io/TheMorningGrindWebsite/web-app",
+  "homepage": "./",
   "dependencies": {
     "@supabase/auth-ui-react": "^0.4.7",
     "@supabase/supabase-js": "^2.47.10",
