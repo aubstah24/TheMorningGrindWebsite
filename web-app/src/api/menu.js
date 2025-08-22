@@ -2,6 +2,10 @@ import { SquareClient, SquareEnvironment } from "square";
 
 export default async function handler(req, res) {
   try {
+    if (!process.env.SQUARE_ACCESS_TOKEN) {
+      throw new Error("Missing SQUARE_ACCESS_TOKEN environment variable");
+    }
+
     const client = new SquareClient({
       environment: SquareEnvironment.Production, // or Sandbox
       accessToken: process.env.SQUARE_ACCESS_TOKEN,
@@ -21,8 +25,14 @@ export default async function handler(req, res) {
     });
 
     // Attach image URLs to items
+
     const itemsWithImages = items.map((item) => ({
-      ...item,
+      id: item.id,
+      name: item.item_data.name,
+      description: item.item_data.description || "",
+      price:
+        item.item_data.variations?.[0]?.item_variation_data?.price_money
+          ?.amount || 0,
       image_url: imageMap[item.item_data.image_ids?.[0]] || null,
     }));
 

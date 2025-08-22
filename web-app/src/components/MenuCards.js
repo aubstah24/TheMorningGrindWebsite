@@ -8,9 +8,12 @@ export const MenuPage = () => {
 
   useEffect(() => {
     fetch("/api/menu")
-      .then((res) => res.json())
-      .then((data) => setDrinks(data))
-      .catch((err) => console.error(err));
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch menu");
+        return res.json();
+      })
+      .then((data) => setDrinks(data.ittems || []))
+      .catch((err) => console.error("Couldn't fetch: ", err));
   }, []);
 
   if (drinks.length === 0) return <p>Loading Menu... </p>;
