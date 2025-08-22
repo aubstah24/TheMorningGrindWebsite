@@ -2,13 +2,14 @@ import { SquareClient, SquareEnvironment } from "square";
 
 export default async function handler(req, res) {
   try {
-    if (!process.env.SQUARE_ACCESS_TOKEN) {
-      throw new Error("Missing SQUARE_ACCESS_TOKEN environment variable");
-    }
+    console.log(
+      "EAAAl1nWmf64d_YyPKrBaSuXBiggQsvyX1Rm7JMxpl7okfFsVmQX0ybWmXUgCRce"
+    );
 
     const client = new SquareClient({
       environment: SquareEnvironment.Production, // or Sandbox
-      accessToken: process.env.SQUARE_ACCESS_TOKEN,
+      accessToken:
+        "EAAAl1nWmf64d_YyPKrBaSuXBiggQsvyX1Rm7JMxpl7okfFsVmQX0ybWmXUgCRce",
     });
 
     const catalogResponse = await client.catalog.list();
